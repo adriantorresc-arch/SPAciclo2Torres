@@ -1,0 +1,123 @@
+.fondo-tarjetas{
+    padding: 30px 0px;
+    background: gray;
+}
+.fondo-tarjetas h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.tarjetas{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+.tarjeta{
+    flex: 1 1 250px;
+    max-width: 500px;
+    text-align: center;
+}
+.img-tarjeta{
+    width: 300px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    border: 4px solid white;
+    margin-bottom: 12px;
+}
+.cont-tarjeta{
+    color: white;
+    padding: 5px;
+}
+.cont-tarjeta h3{
+    margin-bottom: 8px;
+}
+.cont-tarjeta p{
+    line-height: 1.4;
+}
+
+/*Mediaqueries para Tablets */
+@media only screen and (max-width:980px){
+    .tarjetas, .cards{
+        width: 90%;
+    }
+}
+/* Mediaqueries para celular*/
+@media only screen and (max-width:480px){
+    .tarjetas, .cards{
+        width: 98%;
+    }
+    .tarjeta, .cards{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+/* Estilos para Card*/
+.fondo-cards{
+    padding: 35px 0px;
+    background: darkblue;
+    /* Se quita height: 300px fijo para que crezca según el contenido */
+}
+.text-cards{
+    text-align: center;
+    margin-bottom: 25px;
+    color: white;
+}
+.cards{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+}
+.card{
+    flex: 1 1 280px;
+    max-width: 340px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.img-card {
+    width: 100%;
+    height: auto; /* Mantiene su proporción natural sin recortar */
+    max-height: 220px; /* Opcional: limita el alto máximo si es muy alta */
+    object-fit: contain; /* Muestra toda la imagen completa sin cortarla */
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: block;
+}
+.cont-card{
+    width: 100%;
+    text-align: center;
+    color: aliceblue;
+    /* Sin position: absolute ni transform */
+}
+.cont-card h3{
+    margin-bottom: 8px;
+}
+.cont-card p{
+    line-height: 1.45;
+}
+
+/* Mediaqueries para Tablets */
+@media only screen and (max-width:980px){
+    .tarjetas, .cards{
+        width: 90%;
+    }
+}
+/* Mediaqueries para celular */
+@media only screen and (max-width:480px){
+    .tarjetas, .cards{
+        width: 98%;
+    }
+    .tarjeta, .card{
+        width: 100%;
+        max-width: 100%;
+    }
+}
